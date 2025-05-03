@@ -1,0 +1,41 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    background-color:  #D8D9DB;
+}
+
+h1{
+    font-size: 40px;
+    text-align: center;
+}
+
+p{
+    font-size: 20px;
+    text-align: center;
+}
+
+section{
+    padding: 30px 80px;
+    background-color: #D8D9DB;
+    display: flex;
+}
+
+.secdiv{
+    padding: 50px 100px;
+}
+
+.sec2divv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+footer{
+    position: absolute;
+    bottom: 0%;
+    width: 100vw;
+    border-top: 1px solid grey;
+}
