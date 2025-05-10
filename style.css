@@ -262,6 +262,10 @@ footer>div>i{
 
 
 @media only screen and (max-width:780px) {
+
+    .revSec1{
+        flex-direction: column;
+    }
     
     .small_navDiv{
         display: none;
