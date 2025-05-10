@@ -9,21 +9,29 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
+    
     <nav>
         <div class="nav_menu">
                 <li class="li_logo">Trusted
                     <br>
                     Exchanger
                 </li>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./Exchange/exchange.html">Exchange</a></li>
-                <li><a href="./Review/review.html">Review</a></li>
-                <li><a href="./Contact/contact.html">Contact</a></li>
+                <li class="nav_home"><a href="./index.html">Home</a></li>
+                <li class="nav_exchange"><a href="./Exchange/exchange.html">Exchange</a></li>
+                <li class="nav_review"><a href="./Review/review.html">Review</a></li>
+                <li class="nav_contact"><a href="./Contact/contact.html">Contact</a></li>
         </div>
         <div class="nav_btn">
-            <i class="fa-solid fa-bars"></i>
+            <button id="menuBtn" onclick="menuBtn()"><i class="fa-solid fa-bars"></i></button>
         </div>
     </nav>
+
+    <div id="menuSection" class="small_navDiv">
+      <div><a href="./index.html">Home</a></div>
+      <div><a href="./Exchange/exchange.html">Exchange</a></div>
+      <div><a href="./Review/review.html">Review</a></div>
+      <div><a href="./Contact/contact.html">Contact</a></div>
+    </div>
        
 
       <!-- =Section 1 -->
@@ -60,14 +68,18 @@
         
         <br>
 
-        <button class="excBtn">Exchange Now</button>
+        <button onclick="whatsapp()" class="excBtn">Exchange Now</button>
       </div>
 
-      <div>
+      <div class="div_img1">
         <img width="350" src="./Images/Leonardo_Phoenix_10_Clipartstyle_vector_illustration_on_a_whit_2.jpg" alt="">
       </div>
 
       </section>
+
+
+      <!-- Section 2 -->
+
       <section class="sec2">
         <h1 style="text-align: center;">
             Why Clients Choose Us
@@ -78,7 +90,7 @@
                     <h3>Satisfied Clients
                     </h3>
                     <h3 id="oneData">
-                        7578
+                        7k+
                     </h3>
                 </div>   
             </div>
@@ -86,7 +98,7 @@
                 <h3>Total Deal Done
                 </h3>
                 <h3 id="twoData">
-                    11128
+                    11k+
                 </h3></div>
             <div><img src="./Images/success rate.jpg" alt="">
                 <h3>Success Rate
@@ -113,6 +125,8 @@
         </div>
         
       </section>
+
+        <!-- Section 3 -->
 
       <section class="sec3">
           <h1>Join Our WhatsApp Group to Stay Updated on the Latest Activities!</h1>
@@ -142,7 +156,7 @@
                     </li>
                     
                 </ul>
-                <button class="whatsapp_link">Join Here</button>
+                <button  onclick="whatsapp()" class="whatsapp_link">Join Here</button>
                 </div>
         
                 <div class="sec3_div2">
@@ -151,6 +165,10 @@
         </div>
         
       </section>
+
+
+        <!-- Section 5 -->
+
 
       <section class="sec5" >
 
@@ -182,46 +200,49 @@
         
       </section>
 
+        <!-- Section 4 -->
+
+
       <section class="sec4">
         <h1>
             Exchange Crypto
         </h1>
         <div class="container text-center">
             <div class="row">
-              <div class="col-md-3">
+              <div class="col-sm-5 col-md-3">
                 BTC to PKR
               </div>
-              <div class="col-md-3">
+              <div class="col-sm-5 col-md-3">
                 ETH to PKR
               </div>
-              <div class="col-md-3">
+              <div class="col-sm-5 col-md-3">
                 LTC to PKR
               </div>
-              <div class="col-md-3">
+              <div class="col-sm-5 col-md-3">
                 USDT to PKR
               </div>
-              <div class="col-md-3">
+              <div class="col-sm-5 col-md-3">
                 BNB to PKR
               </div>
-              <div class="col-md-3">
+              <div class="col-sm-5 col-md-3">
                 USDC to PKR
               </div>
-              <div class="col-md-3">
+              <div class="col-sm-5 col-md-3">
                PKR To  BTC
               </div>
-              <div class="col-md-3">
+              <div class="col-sm-5 col-md-3">
                PKR To  ETH
               </div>
-              <div class="col-md-3">
+              <div class="col-sm-5 col-md-3">
                PKR To  LTC
               </div>
-              <div class="col-md-3">
+              <div class="col-sm-5 col-md-3">
                 PKR To USDT
               </div>
-              <div class="col-md-3">
+              <div class="col-sm-5 col-md-3">
                PKR To  BNB
               </div>
-              <div class="col-md-3">
+              <div class="col-sm-5 col-md-3">
                 PKR To USDC
               </div>
             </div>
@@ -229,7 +250,7 @@
       </section>
 
       <footer>
-        <div><img width="300px" src="./Images/footer.png" alt=""></div>
+        <div class="f_div1"><img width="300px" src="./Images/footer.png" alt=""></div>
         <div class="f_d2">
             <i style="color: rgb(0, 98, 255); font-size: 20px;" class="fa-brands fa-facebook-f"></i>
             <i style="color: rgb(101, 190, 241); font-size: 20px" class="fa-brands fa-twitter"></i>

@@ -17,13 +17,14 @@ p{
 }
 
 section{
-    padding: 30px 80px;
+    padding: 30px 40px;
     background-color: #D8D9DB;
     display: flex;
+    gap: 0 20px;
 }
 
 .secdiv{
-    padding: 50px 100px;
+    padding: 50px 10px;
 }
 
 .sec2divv{
@@ -34,7 +35,7 @@ section{
 }
 
 footer{
-    position: absolute;
+    position: fixed;
     bottom: 0%;
     width: 100vw;
     border-top: 1px solid grey;

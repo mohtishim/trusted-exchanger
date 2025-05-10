@@ -4,35 +4,81 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-database.js"></script>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <link rel="stylesheet" href="../style.css">
-    <link rel="stylesheet" href="../Exchange/style.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
     <nav>
-        <div class="nav_menu">
-                <li class="li_logo">Trusted
-                    <br>
-                    Exchanger
-                </li>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../Exchange/exchange.html">Exchange</a></li>
-                <li><a href="./review.html">Review</a></li>
-                <li><a href="../Contact/contact.html">Contact</a></li>
-                
+      <div class="nav_menu">
+              <li class="li_logo">Trusted
+                  <br>
+                  Exchanger
+              </li>
+              <li class="nav_home"><a href="../index.html">Home</a></li>
+              <li class="nav_exchange"><a href="../Exchange/exchange.html">Exchange</a></li>
+              <li class="nav_review"><a href="./review.html">Review</a></li>
+              <li class="nav_contact"><a href="../Contact/contact.html">Contact</a></li>
+      </div>
+      <div class="nav_btn">
+          <button id="menuBtn" onclick="menuBtn()"><i class="fa-solid fa-bars"></i></button>
+      </div>
+  </nav>
 
-
-        </div>
-        <div class="nav_btn">
-            <i class="fa-solid fa-bars"></i>
-        </div>
-    </nav>
+  <div id="menuSection" class="small_navDiv">
+    <div><a href="../index.html">Home</a></div>
+    <div><a href="../Exchange/exchange.html">Exchange</a></div>
+    <div><a href="./review.html">Review</a></div>
+    <div><a href="../Contact/contact.html">Contact</a></div>
+  </div>
        
 
       <!-- =Section 1 -->
+       <section class="revSec1">
+        
+        <div class="revSec1div1">
+            <h1 style="color: #009B7D;">
+                Customer Reviews
+            </h1>
+            <br>
+            <p>
+                We value every client's experience and strive to provide the best currency exchange service possible. Take a moment to read what others have said about their dollar exchange transactions with us. If you've recently exchangaed with us, we'd love to hear your thoughts too—your feedback helps us improve and continue to serve you better.
+            </p>
+            <p>
+              Umair Khan Swati and Hunter Swati are seasoned professionals with over 5 years of hands-on experience in the cryptocurrency exchange industry. With a strong foundation in digital finance and a reputation built on trust and transparency, they have successfully facilitated thousands of transactions for clients across Pakistan and beyond. Specializing in PKR to USDT and USDT to PKR conversions, their services are fast, secure, and client-focused. Every day, they manage hundreds of exchanges, ensuring competitive rates, timely settlements, and a seamless user experience. Whether you're new to crypto or a regular trader, Umair and Hunter Swati provide a reliable gateway to the digital currency world.
+            </p>
+        
 
-      
+        </div>
+
+        <div class="revSec1div2">
+            <img style="border-radius: 50px; padding: 40px;" width="400" src="../Images/review-stars.jpg" alt="">
+        </div>
+       </section>
+
+       
+
+       <section class="sec3rev">
+            <div  id="reviewSec"></div>
+            
+       </section>
+
+       <section class="revSec2">
+        <h2 style="color: #009B7D;">Drop your review here:</h2>
+        <br>
+        <input id="inputReview" placeholder="Type your Name" type="text" >
+        <br><br>
+        <textarea id="feedback" name="feedback" placeholder="Share your experience with us..."></textarea>
+        <br><br>
+        <button id="submit" onclick="review()">Submit</button>
+       </section>
+
+       <!-- <i class="fa-solid fa-heart" on ></i> -->
+        
 
     
 
@@ -47,6 +93,6 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
-    <script src="app.js"></script>
+    <script src="../app.js"></script>
   </body>
 </html>
