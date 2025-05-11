@@ -11,23 +11,9 @@ var firebaseConfig = {
   // Initialize Firebase
   var app = firebase.initializeApp(firebaseConfig);
 
-  var satisfiedClients = document.getElementById("oneData");
-  var dealDone = document.getElementById("twoData");
-  var successRate = document.getElementById("threeData");
-  
-  var satisfied = 0;
-  var deal = 0;
-  var success = 0;
-  
-  var satisfiedInterval = setInterval(function () {
-      satisfiedClients.innerText = `${satisfied}k+`;
-      satisfied++;
-      if (satisfied >= 7) {
-          satisfiedClients.innerText = '7k+';
-          clearInterval(satisfiedInterval);
-      }
-  }, 1000);
-  
+
+
+
 
 firebase.database().ref('comments').on("child_added", function(data){
     // console.log(data.val());
@@ -144,8 +130,34 @@ function whatsapp() {
 }
 
 
+// Home page section 2
 
 
+
+  var satisfiedClients = document.getElementById("oneData");
+  var dealDone = document.getElementById("twoData");
+  var successRate = document.getElementById("threeData");
+  
+  var satisfied = 7521;
+  var deal = 15579;
+  var span1 = document.getElementById('satisfied_span');
+  var span2 = document.getElementById('deal_span');
+
+  
+
+  var dealInterval = setInterval(function timer() {
+    deal++;
+    dealDone.innerText = deal;
+    console.log(satisfiedClients.innerText);
+    span2.style.animation = "moving 10s infinite"
+    
+  }, 10000);
+
+  var satisfiedInterval = setInterval(function timer() {
+    satisfied++;
+    satisfiedClients.innerText = satisfied;
+    span1.style.animation = "moving 20s infinite"
+  }, 20000);
 
   
 

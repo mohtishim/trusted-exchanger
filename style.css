@@ -365,3 +365,27 @@ footer>div>i{
         width: 60vw;
     }
 }
+
+/* Counting Section 2 INDEX page */
+
+#satisfied_span, #deal_span{
+    position: absolute;
+    bottom: 0;
+    color: green;
+    font-weight: bold;
+    font-size: 25px;
+    opacity: 0;
+}
+
+@keyframes moving{
+    from{
+        opacity: 1;
+        font-size: 25px;
+        right: 55px;
+    }
+    to{
+        opacity: 0;
+        font-size: 35px;
+        right: -55px;
+    }
+}
