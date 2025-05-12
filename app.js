@@ -149,14 +149,14 @@ function whatsapp() {
     deal++;
     dealDone.innerText = deal;
     console.log(satisfiedClients.innerText);
-    span2.style.animation = "moving 10s infinite"
+    span2.style.animation = "moving1 10s infinite"
     
   }, 10000);
 
   var satisfiedInterval = setInterval(function timer() {
     satisfied++;
     satisfiedClients.innerText = satisfied;
-    span1.style.animation = "moving 20s infinite"
+    span1.style.animation = "moving2 20s infinite"
   }, 20000);
 
   

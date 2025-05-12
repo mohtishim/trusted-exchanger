@@ -377,13 +377,36 @@ footer>div>i{
     opacity: 0;
 }
 
-@keyframes moving{
-    from{
+@keyframes moving2{
+    0%{
         opacity: 1;
         font-size: 25px;
         right: 55px;
     }
-    to{
+    5%{
+        opacity: 0;
+        font-size: 35px;
+        right: -55px;
+    }
+    100%{
+        opacity: 0;
+        font-size: 35px;
+        right: -55px;
+    }
+}
+
+@keyframes moving1{
+    0%{
+        opacity: 1;
+        font-size: 25px;
+        right: 55px;
+    }
+    10%{
+        opacity: 0;
+        font-size: 35px;
+        right: -55px;
+    }
+    100%{
         opacity: 0;
         font-size: 35px;
         right: -55px;
